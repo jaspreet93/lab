@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "startegy", "startegy\startegy.csproj", "{9E71C239-5DE1-4BF1-88BC-226C533DCE47}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "strategy", "strategy\strategy.modelproj", "{5AD524EE-D1DB-47D7-A8E7-9F13ED9E20EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E71C239-5DE1-4BF1-88BC-226C533DCE47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E71C239-5DE1-4BF1-88BC-226C533DCE47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E71C239-5DE1-4BF1-88BC-226C533DCE47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E71C239-5DE1-4BF1-88BC-226C533DCE47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AD524EE-D1DB-47D7-A8E7-9F13ED9E20EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AD524EE-D1DB-47D7-A8E7-9F13ED9E20EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AD524EE-D1DB-47D7-A8E7-9F13ED9E20EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AD524EE-D1DB-47D7-A8E7-9F13ED9E20EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="552243da-6932-4823-b78a-33e4b70ae9cb"
+  name="strategy" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1718cc1a-62fa-4fa6-aa9a-abb35b401930"
+        name="Payment Context"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3be77f50-26d1-40a0-918a-9626f468f53e"
+            isDerived="false"
+            sourceEndRoleName="Payment Context"
+            targetEndRoleName="Payment Strategy"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="6478d4bc-ca95-4fcb-aa6c-6f82da89ec70"
+              LastKnownName="Payment Strategy"
+              LastKnownLocation="strategy.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5d4594ab-be47-415e-82db-7a09708e4da4"
+                  name="Payment Context"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1e31391-fdcb-4f01-8556-b137f104ad23"
+                  name="Payment Strategy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="8f49bd3a-5f0f-444b-97c0-d7dd268e84ed"
+            isDerived="false"
+            sourceEndRoleName="Payment Context"
+            targetEndRoleName="PaymentStrategy"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="118b2952-8682-413f-9a05-0831e07706a4"
+              LastKnownName="PaymentStrategy"
+              LastKnownLocation="strategy.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c51c42ee-ab73-4708-b28f-bbd20b2f2488"
+                  name="Payment Context"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c8ad7e65-b1e7-4365-a3e5-7294f00919aa"
+                  name="PaymentStrategy"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="fcfa2789-f2f1-426f-b050-1984ef17b3d8"
+            name="Payment Strategy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="74728d1b-1418-42b2-bade-8100b4a43bb2"
+                LastKnownName="payment strategy"
+                LastKnownLocation="strategy.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="902c21bc-f3b6-4534-a748-80a9a5ff6880"
+            name="SetPaymentStrategy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="06664377-e040-4743-9eb4-4a8a4d05c8d7"
+                  name="Startegy"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="89736499-2d2a-4e30-9348-f2c4731edb9d"
+                      LastKnownName="Payment Strategy"
+                      LastKnownLocation="strategy.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c0838ae9-a762-4e0e-9f78-b3098a4d6719"
+                  direction="Return"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="8a16a5fa-7063-433f-b9cb-1aaab2b9f41c"
+                      LastKnownName="void"
+                      LastKnownLocation="strategy.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="070306b2-057b-4934-a908-d1d381ce8f62"
+            name="Payment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7b5a8da0-fad6-4c35-93c6-e00161b4ad81"
+                  name="amount"
+                  direction="In"
+                  isUnique="false">
+                  <type_NamedElement>
+                    <undefinedTypeMoniker
+                      Id="a881b14f-7b87-4160-80c8-17f172afd2c3"
+                      LastKnownName="int"
+                      LastKnownLocation="strategy.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="89736499-2d2a-4e30-9348-f2c4731edb9d"
+        name="Payment Strategy" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="8a16a5fa-7063-433f-b9cb-1aaab2b9f41c"
+        name="void" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a881b14f-7b87-4160-80c8-17f172afd2c3"
+        name="int" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6478d4bc-ca95-4fcb-aa6c-6f82da89ec70"
+        name="Payment Strategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="74728d1b-1418-42b2-bade-8100b4a43bb2"
+        name="payment strategy" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="632ad2bc-4a67-4118-bc90-953c8c7655a9"
+        name="Debit Card Payment Strategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="96660255-f8e1-4457-ab1a-c64cf84a8087">
+            <interfaceMoniker
+              Id="118b2952-8682-413f-9a05-0831e07706a4"
+              LastKnownName="PaymentStrategy"
+              LastKnownLocation="strategy.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="548bc2f6-2295-4933-842a-a0a9f8a596da"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6478d4bc-ca95-4fcb-aa6c-6f82da89ec70"
+              LastKnownName="Payment Strategy"
+              LastKnownLocation="strategy.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="29de5fec-a4a3-4d20-92ba-4ae64d6d84ce"
+            name="CollectPayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a07ac436-c20d-41c3-a8b1-b6b78cb9180e"
+                  name="amount"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4f317599-d36c-44dc-ab55-13893a294657"
+                  name="card_no"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5b60b6a2-82a3-44c8-a6ab-e0c726d2a2a4"
+        name="Credit Card Payment Strategy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="18c38699-f8e8-4490-8a1e-8e2689fd587e">
+            <interfaceMoniker
+              Id="118b2952-8682-413f-9a05-0831e07706a4"
+              LastKnownName="PaymentStrategy"
+              LastKnownLocation="strategy.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <generalsInternal>
+          <generalization
+            Id="8f7c8daa-c76a-4419-a33e-a2a05026f450"
+            isSubstitutable="false">
+            <classMoniker
+              Id="6478d4bc-ca95-4fcb-aa6c-6f82da89ec70"
+              LastKnownName="Payment Strategy"
+              LastKnownLocation="strategy.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="a795b12a-47e3-43b4-8311-689d0f95a2aa"
+            name="CollectPayment"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a7c2add4-1365-46ec-847f-2fe96a7a081b"
+                  name="amount"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4c5c1ad1-f82e-49e2-a066-b7687d1e4e67"
+                  name="card_no"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="118b2952-8682-413f-9a05-0831e07706a4"
+        name="PaymentStrategy"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

@@ -1,0 +1,6 @@
+G:\msd 2sem\system design\seacraft\seacraft\bin\Debug\seacraft.exe.config
+G:\msd 2sem\system design\seacraft\seacraft\obj\Debug\seacraft.csprojResolveAssemblyReference.cache
+G:\msd 2sem\system design\seacraft\seacraft\bin\Debug\seacraft.exe
+G:\msd 2sem\system design\seacraft\seacraft\bin\Debug\seacraft.pdb
+G:\msd 2sem\system design\seacraft\seacraft\obj\Debug\seacraft.exe
+G:\msd 2sem\system design\seacraft\seacraft\obj\Debug\seacraft.pdb
