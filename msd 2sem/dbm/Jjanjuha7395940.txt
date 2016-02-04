@@ -1,0 +1,148 @@
+﻿*** QUESTION1 List all data from the AcademicStatus table. ***
+ 
+code explanation               frenchExplanation
+---- ------------------------- -------------------------
+D    Discontinued              Abandonnées
+N    Normal                    À temps plein, actif
+S    Suspended                 Suspendue
+
+(3 row(s) affected)
+
+*** QUESTION2 List number and academicStatusCode for all students who have been discontinued.  List the results in descending order by number. ***
+ 
+number  academicStatusCode
+------- ------------------
+7826662 D
+5613716 D
+5582770 D
+5123120 D
+3223278 D
+2238665 D
+1335314 D
+
+(7 row(s) affected)
+
+*** QUESTION3 List number and academicStatusCode for all students who have been discontinued or suspended.  List the results in ascending order by number.  Use OR.  Do not use NOT or !=. ***
+ 
+number  academicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 row(s) affected)
+
+*** QUESTION4 List number and academicStatusCode for all students who have been discontinued or suspended.  List the results in ascending order by number.  Use NOT.   Do not use OR or !=. ***
+ 
+number  academicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 row(s) affected)
+
+*** QUESTION5 List number and academicStatusCode for all students who have been discontinued or suspended.  List the results in ascending order by number.  Use !=.   Do not use OR or NOT.***
+ 
+number  academicStatusCode
+------- ------------------
+1335314 D
+2238665 D
+3223278 D
+5123120 D
+5166111 S
+5473160 S
+5582770 D
+5613716 D
+5832548 S
+6484885 S
+7826662 D
+8412280 S
+8588766 S
+
+(13 row(s) affected)
+
+*** QUESTION6 List the countries persons are from, but show each country code only once.***
+ 
+countryCode
+-----------
+CAN
+CHN
+IND
+NGA
+POL
+USA
+
+(6 row(s) affected)
+
+*** QUESTION7 College management would like to see the new values that will result if all incidental fees are increased by 10%. Show item aliased as ‘Incidental Fee Item’.  
+  Show amountPerSemester aliased as ‘Current Fee’.Use an expression to calculate the increased fee and alias the output as ‘Increased  Fee’.Order the results in ascending order by item.
+  The values created by your expression will have many decimal places.Later we will discuss how to format money amounts in a more conventional form.***
+ 
+Incidental Fee Item                                          Current Fee           Increased Fee
+------------------------------------------------------------ --------------------- ---------------------------------------
+Administration Fee                                           20.60                 22.66000
+CSA Fee                                                      4.50                  4.95000
+CSI Association Fee - Doon Campus                            77.50                 85.25000
+CSI Capital Development Fee - Doon Campus                    52.77                 58.04700
+CSI Health Plan                                              185.68                204.24800
+Graduation/Alumni Services Fee                               18.56                 20.41600
+Recreation/Athletics Fee                                     63.17                 69.48700
+Student Priority Fee                                         45.46                 50.00600
+Technology Enhancement Fee                                   117.05                128.75500
+
+(9 row(s) affected)
+
+*** QUESTION 8 List all data for students with finalmark less than (but not equal to) 55 and greater than 0.***
+CourseOfferingId studentNumber finalMark
+---------------- ------------- ----------------------
+9                3526415       53
+9                5767777       54
+9                5785845       50
+9                8653370       51
+19               1114453       52
+19               6471585       51
+19               8317323       54
+29               2866564       52
+29               3117777       53
+29               5727664       53
+29               8414815       53
+
+(11 row(s) affected)
+
+*** QUESTION9 List the number of any room that has a capacity greater than or equal to 40, is a lab, has computers with 4GB memory, and is located at the Doon campus. ***
+number
+------
+2A220 
+
+(1 row(s) affected)
+
+*** QUESTION10 List all employees who teach in the School of Trades and Apprenticeship and are located at the Doon, Guelph or Waterloo campus.***
+number  reportsTo campusCode schoolCode location                       businessPhone                  extension fax            encryptedSin
+------- --------- ---------- ---------- ------------------------------ ------------------------------ --------- -------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+6860242 NULL      D          TAP        3B21                           (519) 748-5220                 1795      (519) 189-3239 0x007EBEE345ED3640976CB8A50AAF87D6010000005F4C51B071BA12FA926DB80A7CC58177E36FD943052D4FD4D13C3BE210F46758
+6886352 8436780   G          TAP        23                             (519) 748-5220                 6742      NULL           0x007EBEE345ED3640976CB8A50AAF87D601000000CBA7482514F54BEF78B6E08A0503C12BCED560466CB808CBE7EDACF194DF25B8
+8436780 NULL      D          TAP        4B179                          (519) 748-5220                 7361      (519) 189-3239 0x007EBEE345ED3640976CB8A50AAF87D6010000006D882D4490554BAB10FB547D06121F7D6A1CE83737BC6806B16A29A090AF2D6D
+
+(3 row(s) affected)
+
